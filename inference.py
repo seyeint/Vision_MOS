@@ -134,6 +134,10 @@ python inference.py --video_file_path sample.mp4 --video_output_path output/imag
 python inference.py --video_file_path siren.mp4 --video_output_path output/images/siren --extract_frames --flow_output_path output/flow --extract_flow --visualize_flow --run_flowsam --flowsam_output_path output --visualize_output
 python inference.py --video_file_path highway.mp4 --video_output_path output/images/highway --extract_frames --flow_output_path output/flow --extract_flow --visualize_flow --run_flowsam --flowsam_output_path output --visualize_output
 python inference.py --video_file_path bird.gif --video_output_path output/images/bird --extract_frames --flow_output_path output/flow --extract_flow --visualize_flow --run_flowsam --flowsam_output_path output --visualize_output
+
+my terminal for penguins:
+python inference.py --video_file_path penguins.gif --video_output_path output/images/penguins --extract_frames --flow_output_path output/flow --extract_flow --visualize_flow --run_flowsam --flowsam_output_path output --visualize_output
+
 """
 
 if __name__ == '__main__':
