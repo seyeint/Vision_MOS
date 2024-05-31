@@ -30,7 +30,7 @@ In this specific experiment I'm trying have a solution that knows that the conte
 
 <sub>This works best with non-moving backgrounds or slow moving backgrounds. Another important question is why not simply use optical flow as the one and final segmentation solution and the reason is that the method itself is extremely incomplete as it deals only with noticing moving parts and can't really differentiate objects that lack boundaries and move at similar speeds (low relative speed difference).</sub>
 
-For that, optical flow (uses vector field of pixel motion and struggles when there's little relative motion) is used in order to produce an innitial segmentation of moving elements that can be integrated with SAM as direct input or as I used it, working as a prompt that is added to the image embeddings ("RGB based") in order to discover these moving parts by incorporating appearance information.
+For that, optical flow (uses vector field of pixel motion and struggles when there's little relative motion) is used in order to produce an innitial segmentation of moving elements that can be integrated with SAM as direct input or as used in the example, working as a prompt (using its prediction MOS - moving object score - that specifices if prompts are moving or not) that is added to the image embeddings ("RGB based") in order to discover these moving parts by incorporating appearance information.
 
 ___
 ### Possible next steps
