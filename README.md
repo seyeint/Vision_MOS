@@ -35,5 +35,7 @@ For that, optical flow (uses vector field of pixel motion and struggles when the
 ___
 ### Possible next steps
 Try to reverse the prompt, meaning segment only what's not moving for other purposes.
+
 Test and implement image or video on top of chosen masks, creating an edited video.
+
 Try to research a bit about parallelized inference as it would be nice to have this work for live applications such as streaming, where one can use the delay data (3 seconds or more) to pre-compute segmentation masks and obviously each frame can be inferenced independently of others, which is one of the ways I assume one can tackle the problem. Also test the inference speedups and quality with a greyscale channel input of one's images.
